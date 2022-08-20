@@ -1,0 +1,17 @@
+.sidenote-number::after,
+.sidenote::before {
+    content: none;
+}
+
+.sidenote-number {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote .sidenote-number {
+    left: -0.1rem;
+}
