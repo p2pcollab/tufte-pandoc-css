@@ -1,0 +1,31 @@
+a.sourceLine::before { text-decoration: none; }
+
+code span.kw { font-weight: normal; font-style: normal; } /* Keyword */
+code span.dt { font-weight: bold; font-style: normal; } /* DataType */
+code span.cn { font-weight: bold; font-style: normal; } /* Constant */
+code span.dv { font-weight: normal; font-style: normal; } /* DecVal */
+code span.bn { font-weight: normal; font-style: normal; } /* BaseN */
+code span.fl { font-weight: normal; font-style: normal; } /* Float */
+code span.ch { font-weight: normal; font-style: normal; } /* Char */
+code span.st { font-weight: normal; font-style: normal; } /* String */
+code span.co { font-weight: normal; font-style: italic; } /* Comment */
+code span.ot { font-weight: normal; font-style: normal; } /* Other */
+code span.al { font-weight: normal; font-style: italic; } /* Alert */
+code span.fu { font-weight: bold; font-style: normal; } /* Function */
+code span.er { font-weight: normal; font-style: normal; } /* Error */
+code span.wa { font-weight: bold; font-style: normal; } /* Warning */
+code span.sc { font-weight: normal; font-style: normal; } /* SpecialChar */
+code span.vs { font-weight: normal; font-style: normal; } /* VerbatimString */
+code span.ss { font-weight: normal; font-style: normal; } /* SpecialString */
+code span.im { font-weight: normal; font-style: normal; } /* Import */
+code span.va { font-weight: normal; font-style: normal; } /* Variable */
+code span.cf { font-weight: bold; font-style: normal; } /* ControlFlow */
+code span.op { font-weight: normal; font-style: normal; } /* Operator */
+code span.bu { font-weight: normal; font-style: normal; } /* BuiltIn */
+code span.ex { font-weight: normal; font-style: normal; } /* Extension */
+code span.pp { font-weight: normal; font-style: normal; } /* Preprocessor */
+code span.at { font-weight: normal; font-style: normal; } /* Attribute */
+code span.do { font-weight: normal; font-style: italic; } /* Documentation */
+code span.an { font-weight: normal; font-style: italic; } /* Annotation */
+code span.cv { font-weight: normal; font-style: italic; } /* CommentVar */
+code span.in { font-weight: normal; font-style: italic; } /* Information */
