@@ -29,9 +29,11 @@ $endfor$
 $if(math)$
   $math$
 $endif$
+$if(html5shiv)$
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+$endif$
 $for(header-includes)$
   $header-includes$
 $endfor$
@@ -57,9 +59,17 @@ $endif$
 </header>
 $endif$
 $if(toc)$
-<nav id="$idprefix$TOC">
+<section id="toc">
+$if(toc-margin)$
+<div class="marginnote">
+$endif$
+$if(toc-title)$
+<h2>$toc-title$</h2>
+$endif$
+<nav>
 $toc$
 </nav>
+</section>
 $endif$
 $body$
 </article>
