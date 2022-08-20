@@ -27,27 +27,30 @@ li:not(:first-child) {
 /* To get the pandoc-generated bibliography to match style, define csl classes. */
 div.csl-bib-body {
     width: 55%;
+    font-size: 1.1rem;
+    line-height: 1.3;
 }
 div.csl-entry {
     clear: both;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 }
-.hanging div.csl-entry {
+div.hanging-indent div.csl-entry {
     margin-left: 2rem;
     text-indent: -2rem;
 }
 div.csl-left-margin {
-    min-width: 2rem;
     float: left;
+    width: 2.6rem;
+    text-align: right;
 }
 div.csl-right-inline {
-    margin-left: 2rem;
-    padding-left: 1rem;
+    margin-left: 2.6rem;
+    padding-left: 0.5rem;
 }
 div.csl-indent {
     margin-left: 2rem;
 }
-div.hanging-indent{
+div.hanging-indent {
     margin-left: 1.5rem;
     text-indent: -1.5rem;
 }
@@ -64,8 +67,8 @@ sup, sub {
     position: relative;
     top: -0.4em;
 }
-sub { 
-    top: 0.4em; 
+sub {
+    top: 0.4em;
 }
 
 /* Replicate styling from sidenote numbers to footnote numbers */
@@ -83,4 +86,93 @@ a.footnote-ref {
     font-size: inherit;
     vertical-align: inherit;
     line-height: inherit;
+}
+
+/* ToC section */
+#toc {
+    width: 55%;
+    padding: 0;
+}
+
+/* ToC visible by default */
+@media (max-width: 760px) {
+    #toc .marginnote {
+        display: block;
+        float: none;
+        width: auto;
+    }
+}
+
+/* Headings on the margin */
+.marginnote h1,
+.marginnote h2,
+.marginnote h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* Lists & paragraphs on the margin */
+.marginnote p,
+.marginnote dl,
+.marginnote ol,
+.marginnote ul {
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+/* Dark mode figures: invert or show either light or dark */
+img.dark, figure.dark {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  img.light, figure.light {
+    display: none;
+  }
+  img.dark, figure.dark {
+    display: inherit;
+  }
+  img.invert, figure.invert img {
+    filter: invert(1);
+  }
+}
+
+/* figure in a div */
+.fullwidth figure {
+    max-width: inherit;
+}
+
+/* figcaption as marginnote */
+figcaption {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    margin-left: 10%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+/* Full-width figcaption */
+.fullwidth figcaption {
+    margin-right: 0;
+    margin-bottom: 3rem;
+    max-width: inherit;
+}
+
+/* Full-width figcaption on small screens */
+@media (max-width: 760px) {
+    figcaption, .fullwidth figcaption {
+        margin-right: 0;
+        margin-bottom: 3rem;
+        max-width: inherit;
+    }
+}
+
+/* Clear after figcaption */
+figure + *, .fullwidth + * {
+    clear: both;
 }
