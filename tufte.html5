@@ -58,6 +58,13 @@ $endif$
 $endif$
 </header>
 $endif$
+$if(header-image)$
+<section>
+  <figure class="fullwidth">
+    <img src="$header-image$" class="$header-image-class$" />
+  </figure>
+</section>
+$endif$
 $if(toc)$
 <section id="toc">
 $if(toc-margin)$
