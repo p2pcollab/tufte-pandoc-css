@@ -15,7 +15,7 @@ $if(keywords)$
 $endif$
 $if(description)$
   <meta name="description" content="$description$">
-$elsif(subtitle)$
+$elseif(subtitle)$
   <meta name="description" content="$subtitle$">
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
