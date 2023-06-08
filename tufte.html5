@@ -47,6 +47,9 @@ $endfor$
 $for(include-before)$
 $include-before$
 $endfor$
+$if(pdf-link)$
+<a class="pdf" href="$basename$.pdf"></a>
+$endif$
 <article>
 $if(title)$
 <header>

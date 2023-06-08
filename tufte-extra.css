@@ -1,3 +1,14 @@
+/* Link to PDF version of the page */
+a.pdf::before {
+    content: "🖶";
+}
+a.pdf, a.pdf:link, a.pdf:visited {
+    float: right;
+    margin: 1em;
+    text-decoration: none;
+    background: none;
+}
+
 /* The default x-height for code is slightly too large in side notes */
 .marginnote code, .sidenote code {
     font-size: 0.9rem;
