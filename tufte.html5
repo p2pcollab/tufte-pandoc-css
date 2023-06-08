@@ -48,7 +48,7 @@ $for(include-before)$
 $include-before$
 $endfor$
 $if(pdf-link)$
-<a class="pdf" href="$basename$.pdf"></a>
+<a class="pdf" href="$basename$.pdf">PDF</a>
 $endif$
 <article>
 $if(title)$
