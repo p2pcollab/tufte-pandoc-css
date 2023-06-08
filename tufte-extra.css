@@ -1,6 +1,6 @@
 /* Link to PDF version of the page */
 a.pdf::before {
-    content: "🖶";
+    content: "🗎";
 }
 a.pdf, a.pdf:link, a.pdf:visited {
     float: right;
